@@ -1,6 +1,7 @@
-import React from 'React';
+import React from 'react';
 import './index.css';
 import 'App.js';
+import * as calendar from './calendar';
 
 export default class calendar extends React.Component {
     static defaultProps = {
@@ -29,16 +30,21 @@ export default class calendar extends React.Component {
 
     handlePrevMonthButtonClick = () => {
         const date = new Date(this.year, this.month - 1);
-        console.log(date);
         this.setState({date})
     };
     handleNextMonthButtonClick = () => {
         const date = new Date(this.year, this.month - 1);
         this.setState({date})
     };
-    handleSelectChange = () => {};
+    handleSelectChange = () => {
+        const year = this.yearSelect.value;
+        const month = this.monthSelect.value;
+        
+        const date = new Date(year, month);
+
+        this.setState({date});
+    };
     handleDayClick = date => {
-        console.log(date);
         this.setState({selectedDate: date});
         this.props.onChange(date);
     }
@@ -46,25 +52,28 @@ export default class calendar extends React.Component {
     render() {
         const { years, monthNems, weekDayNames } = this.props;
 
-        const monthData = [
-            [undefined, undefined, new Date(), new Date(), new Date(), new Date(), new Date()],
-            [new Date(), new Date(), new Date(), new Date(), new Date(), new Date(), new Date()],
-            [new Date(), new Date(), new Date(), new Date(), new Date(), new Date(), new Date()],
-            [new Date(), new Date(), new Date(), new Date(), undefined, undefined, undefined]
-        ];
+        const monthData = calendar.getMonthData(this.year, this.month);
 
         return (
             <div className = "calendar">
                  <header>
                     <button onClick={this.handlePrevMonthButtonClick}>{'<'}</button>
 
-                    <select>
+                    <select 
+                        ref={element => this.monthSelect = element}
+                        defaultValue={this.month}
+                        onChange={this.handleSelectChange}
+                    >
                         {monthNames.map((name, index) =>
                             <option key={name} value={index}>{name}</option>
                         )}
                     </select>
 
-                    <select>
+                    <select 
+                        ref={element => this.yearSelect = element}
+                        defaultValue={this.year}
+                        onChange={this.handleSelectChange}
+                    >
                         {years.map(year =>
                             <option key={year} value={year}>{year}</option>
                         )}

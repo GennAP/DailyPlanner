@@ -1,0 +1,244 @@
+diff --git a/.eslintcache b/.eslintcache
+index 6495011..5d1bd6b 100644
+--- a/.eslintcache
++++ b/.eslintcache
+@@ -1 +1 @@
+-[{"C:\\Users\\voron\\Documents\\projects\\zadanie\\src\\index.js":"1","C:\\Users\\voron\\Documents\\projects\\zadanie\\src\\App.js":"2","C:\\Users\\voron\\Documents\\projects\\zadanie\\src\\reportWebVitals.js":"3","C:\\Users\\voron\\Documents\\projects\\zadanie\\src\\components\\calendar\\index.jsx":"4"},{"size":500,"mtime":499162500000,"results":"5","hashOfConfig":"6"},{"size":195,"mtime":1612341124670,"results":"7","hashOfConfig":"6"},{"size":362,"mtime":499162500000,"results":"8","hashOfConfig":"6"},{"size":1380,"mtime":1612448175863,"results":"9","hashOfConfig":"6"},{"filePath":"10","messages":"11","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"12"},"l6506t",{"filePath":"13","messages":"14","errorCount":0,"warningCount":1,"fixableErrorCount":0,"fixableWarningCount":0,"source":"15","usedDeprecatedRules":"12"},{"filePath":"16","messages":"17","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"12"},{"filePath":"18","messages":"19","errorCount":1,"warningCount":3,"fixableErrorCount":0,"fixableWarningCount":0,"source":"20"},"C:\\Users\\voron\\Documents\\projects\\zadanie\\src\\index.js",[],["21","22"],"C:\\Users\\voron\\Documents\\projects\\zadanie\\src\\App.js",["23"],"import logo from './logo.svg';\nimport './App.css';\n\nimport calendar from './components/calendar';\n\nfunction App() {\n  return (\n    <div>\n      <calendar />\n    </div>\n  );\n}\n\nexport default App;\n","C:\\Users\\voron\\Documents\\projects\\zadanie\\src\\reportWebVitals.js",[],"C:\\Users\\voron\\Documents\\projects\\zadanie\\src\\components\\calendar\\index.jsx",["24","25","26","27"],"import React from 'React';\r\nimport './index.css';\r\nimport 'App.js';\r\n\r\nexport default class calendar extends React.Component {\r\n    static defaultProps = {\r\n        years: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],\r\n        monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],\r\n        weekDayNames: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс']\r\n    };\r\n    \r\n    render() {\r\n        const { years, monthNems, weekDayNames } = this.props;\r\n        return (\r\n            <div className = \"calendar\">\r\n                 <header>\r\n                    <button>{'<'}</button>\r\n\r\n                    <select>\r\n                        {monthNames.map((name, index) =>\r\n                            <option key={name} value={index}>{name}</option>\r\n                        )}\r\n                    </select>\r\n\r\n                    <select></select>\r\n\r\n                    <button>{'>'}</button>\r\n                 </header>\r\n\r\n                 <table>\r\n                     <thead>\r\n                         <tr>\r\n\r\n                         </tr>\r\n                     </thead>\r\n\r\n                     <tbody>\r\n\r\n                     </tbody>\r\n                 </table>\r\n            </div>\r\n        )\r\n    }\r\n}",{"ruleId":"28","replacedBy":"29"},{"ruleId":"30","replacedBy":"31"},{"ruleId":"32","severity":1,"message":"33","line":1,"column":8,"nodeType":"34","messageId":"35","endLine":1,"endColumn":12},{"ruleId":"32","severity":1,"message":"36","line":13,"column":17,"nodeType":"34","messageId":"35","endLine":13,"endColumn":22},{"ruleId":"32","severity":1,"message":"37","line":13,"column":24,"nodeType":"34","messageId":"35","endLine":13,"endColumn":33},{"ruleId":"32","severity":1,"message":"38","line":13,"column":35,"nodeType":"34","messageId":"35","endLine":13,"endColumn":47},{"ruleId":"39","severity":2,"message":"40","line":20,"column":26,"nodeType":"34","messageId":"41","endLine":20,"endColumn":36},"no-native-reassign",["42"],"no-negated-in-lhs",["43"],"no-unused-vars","'logo' is defined but never used.","Identifier","unusedVar","'years' is assigned a value but never used.","'monthNems' is assigned a value but never used.","'weekDayNames' is assigned a value but never used.","no-undef","'monthNames' is not defined.","undef","no-global-assign","no-unsafe-negation"]
+\ No newline at end of file
++[{"/home/ann/Документы/htmlacademy/ВГ/DailyPlanner/src/index.js":"1","/home/ann/Документы/htmlacademy/ВГ/DailyPlanner/src/App.js":"2","/home/ann/Документы/htmlacademy/ВГ/DailyPlanner/src/reportWebVitals.js":"3","/home/ann/Документы/htmlacademy/ВГ/DailyPlanner/src/components/Calendar/index.jsx":"4"},{"size":500,"mtime":1612681730311,"results":"5","hashOfConfig":"6"},{"size":192,"mtime":1612684586008,"results":"7","hashOfConfig":"6"},{"size":362,"mtime":1612681730311,"results":"8","hashOfConfig":"6"},{"size":3507,"mtime":1612684575823,"results":"9","hashOfConfig":"6"},{"filePath":"10","messages":"11","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"12"},"v7df28",{"filePath":"13","messages":"14","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"15","messages":"16","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"12"},{"filePath":"17","messages":"18","errorCount":0,"warningCount":2,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},"/home/ann/Документы/htmlacademy/ВГ/DailyPlanner/src/index.js",[],["19","20"],"/home/ann/Документы/htmlacademy/ВГ/DailyPlanner/src/App.js",[],"/home/ann/Документы/htmlacademy/ВГ/DailyPlanner/src/reportWebVitals.js",[],"/home/ann/Документы/htmlacademy/ВГ/DailyPlanner/src/components/Calendar/index.jsx",["21","22"],{"ruleId":"23","replacedBy":"24"},{"ruleId":"25","replacedBy":"26"},{"ruleId":"27","severity":1,"message":"28","line":6,"column":12,"nodeType":"29","messageId":"30","endLine":6,"endColumn":24},{"ruleId":"27","severity":1,"message":"31","line":25,"column":11,"nodeType":"29","messageId":"30","endLine":25,"endColumn":14},"no-native-reassign",["32"],"no-negated-in-lhs",["33"],"no-unused-vars","'selectedDate' is assigned a value but never used.","Identifier","unusedVar","'day' is assigned a value but never used.","no-global-assign","no-unsafe-negation"]
+\ No newline at end of file
+diff --git a/src/App.css b/src/App.css
+index 74b5e05..e69de29 100644
+--- a/src/App.css
++++ b/src/App.css
+@@ -1,38 +0,0 @@
+-.App {
+-  text-align: center;
+-}
+-
+-.App-logo {
+-  height: 40vmin;
+-  pointer-events: none;
+-}
+-
+-@media (prefers-reduced-motion: no-preference) {
+-  .App-logo {
+-    animation: App-logo-spin infinite 20s linear;
+-  }
+-}
+-
+-.App-header {
+-  background-color: #282c34;
+-  min-height: 100vh;
+-  display: flex;
+-  flex-direction: column;
+-  align-items: center;
+-  justify-content: center;
+-  font-size: calc(10px + 2vmin);
+-  color: white;
+-}
+-
+-.App-link {
+-  color: #61dafb;
+-}
+-
+-@keyframes App-logo-spin {
+-  from {
+-    transform: rotate(0deg);
+-  }
+-  to {
+-    transform: rotate(360deg);
+-  }
+-}
+diff --git a/src/App.js b/src/App.js
+index 617f126..ab556da 100644
+--- a/src/App.js
++++ b/src/App.js
+@@ -1,12 +1,13 @@
+-import logo from './logo.svg';
+-import './App.css';
++import React from 'react' 
++
++import Calendar from './components/Calendar';
+ 
+-import calendar from './components/calendar';
++import './App.css';
+ 
+ function App() {
+   return (
+     <div>
+-      <calendar />
++      <Calendar />
+     </div>
+   );
+ }
+diff --git a/src/components/calendar/index.css b/src/components/calendar/index.css
+deleted file mode 100644
+index 34cb828..0000000
+--- a/src/components/calendar/index.css
++++ /dev/null
+@@ -1,52 +0,0 @@
+-.calendar header {
+-    dispaly: flex;
+-    justify-content: center;
+-    margin-bottom: 8px;
+-}
+-
+-.calendar header button,
+-.calendar header select {
+-    margin: 0 4px;
+-}
+-
+-.calendar table {
+-    table-layout: fixed;
+-    border-collapse: separate;
+-    border-spacing: 0;
+-    margin: auto;
+-}
+-
+-.calendar th {
+-    vertical-align: middle;
+-    text-align: center;
+-    height: 36px;
+-}
+-
+-.calendar .day {
+-    padding: 4px 8px;
+-    vertical-align: middle;
+-    text-align: center;
+-    border: 2px solid transparent;
+-}
+-
+-.calendar .day:hover {
+-    background-color: gray;
+-    cursor: pointer;
+-}
+-
+-.calendar .day.selected {
+-    border: 2px solid dodgerblue;
+-}
+-
+-.calendar .day.today {
+-    background-color: dodgerblue;
+-    color: white;
+-}
+-
+-.calendar .day.today:hover {
+-    background-color: #0081ff;
+-}
+-
+-.calendar .day.today.selected {
+-    border: 2px solid lightgray;
+-}
+\ No newline at end of file
+diff --git a/src/components/calendar/index.jsx b/src/components/calendar/index.jsx
+deleted file mode 100644
+index e72f5fb..0000000
+--- a/src/components/calendar/index.jsx
++++ /dev/null
+@@ -1,104 +0,0 @@
+-import React from 'React';
+-import './index.css';
+-import 'App.js';
+-
+-export default class calendar extends React.Component {
+-    static defaultProps = {
+-        date: new Date(),
+-        years: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
+-        monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+-        weekDayNames: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],
+-        onChange: Function.prototype
+-    };
+-    
+-    state = {
+-        date: this.props.date,
+-        currentDate: new Date(),
+-        selectedDate: null
+-    }
+-
+-    get year() {
+-        return this.state.date.getFullYear();
+-    }
+-    get month() {
+-        return this.state.date.getMonth();
+-    }
+-    get day() {
+-        return this.state.date.getDay();
+-    }
+-
+-    handlePrevMonthButtonClick = () => {
+-        const date = new Date(this.year, this.month - 1);
+-        console.log(date);
+-        this.setState({date})
+-    };
+-    handleNextMonthButtonClick = () => {
+-        const date = new Date(this.year, this.month - 1);
+-        this.setState({date})
+-    };
+-    handleSelectChange = () => {};
+-    handleDayClick = date => {
+-        console.log(date);
+-        this.setState({selectedDate: date});
+-        this.props.onChange(date);
+-    }
+-
+-    render() {
+-        const { years, monthNems, weekDayNames } = this.props;
+-
+-        const monthData = [
+-            [undefined, undefined, new Date(), new Date(), new Date(), new Date(), new Date()],
+-            [new Date(), new Date(), new Date(), new Date(), new Date(), new Date(), new Date()],
+-            [new Date(), new Date(), new Date(), new Date(), new Date(), new Date(), new Date()],
+-            [new Date(), new Date(), new Date(), new Date(), undefined, undefined, undefined]
+-        ];
+-
+-        return (
+-            <div className = "calendar">
+-                 <header>
+-                    <button onClick={this.handlePrevMonthButtonClick}>{'<'}</button>
+-
+-                    <select>
+-                        {monthNames.map((name, index) =>
+-                            <option key={name} value={index}>{name}</option>
+-                        )}
+-                    </select>
+-
+-                    <select>
+-                        {years.map(year =>
+-                            <option key={year} value={year}>{year}</option>
+-                        )}
+-                    </select>
+-
+-                    <button onClick={this.handleNextMonthButtonClick}>{'>'}</button>
+-                 </header>
+-
+-                 <table>
+-                     <thead>
+-                         <tr>
+-                            {weekDayNames.map(name =>
+-                                <th key={name}>{name}</th>    
+-                            )}
+-                         </tr>
+-                     </thead>
+-
+-                     <tbody>
+-                        {monthData.map((week, index) =>
+-                            <tr key={index} className="week">
+-                                {week.map((date, index) => date ?
+-                                    <td 
+-                                        key={index} 
+-                                        className="day" 
+-                                        onClick={() => this.handleDayClick(date)}
+-                                    >{data.getDate()}</td>
+-                                    :
+-                                    <td key = {index} />
+-                                )}
+-                            </tr>
+-                        )}
+-                     </tbody>
+-                 </table>
+-            </div>
+-        )
+-    }
+-}
+\ No newline at end of file
